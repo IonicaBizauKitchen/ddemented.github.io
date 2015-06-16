@@ -101,7 +101,7 @@ hr  {
     }
 }
 
-#loader {
+.loader {
     position:fixed;
     z-index:10000;
     top:0;
@@ -111,14 +111,14 @@ hr  {
     text-align:center;
 }
 
-#loader i {
+.loader i {
     margin-top:20%;
     -webkit-animation: rotation 2s ease-in-out infinite;
     -moz-animation: rotation 2s ease-in-out infinite;
     animation: rotation 2s ease-in-out infinite;
 }
 
-#loader p {
+.loader p {
     text-align: center;
     -webkit-animation: opacity 1s ease-in-out infinite alternate;
     -moz-animation: opacity 1s ease-in-out infinite alternate;
