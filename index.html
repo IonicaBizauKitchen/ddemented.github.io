@@ -1,543 +1,565 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="en">
 
-<head>
+    <!--    Head     -->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Welcome To King's Landing | Sanjeev S Nair</title>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/foundation.min.css" />
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="css/header.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <script src="js/vendor/modernizr.js"></script>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>
 
-    <title>Sanjeev S Nair</title>
+        </script>
+    </head>
 
-    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--    Body     -->
+    <body>
+        <!-- Div id skrollr for mobile support -- >
+        <div id="skrollr-body">
 
-    <!-- Custom CSS -->
-    <link href="css/freelancer.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body id="page-top" class="index">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#page-top">Welcome</a>
+            <!--	Loading Screen     -->
+            <div id="loader">
+                <i class="fa fa-large fa-cog fa-pulse"></i>
+                <p>Logging in...</p>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top">Top</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Projects</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <!--<li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>-->
-                </ul>
+            <!--	Background     -->
+            <div class="background"
+                data-anchor-target="#intro"
+                data--100-bottom="filter:    blur(0px);"
+                data-top-center="filter:    clur(10px);">
             </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/profile.png" alt="">
-                    <div class="intro-text">
-                        <span class="name">Sanjeev S Nair</span>
-                        <hr class="star-light">
-                        <span class="skills">Programmer - Web Developer - Gamer - App developer</span>
-                    </div>
-                </div>
+            <!--	Left nav     -->
+            <div class="small-nav"
+                data--100-bottom="opacity: 0;"
+                data-top-top="opacity: 1;"
+                data-anchor-target="#section-about">
+                <i id="u" class="fa fa-small-up fa-angle-up customScroll-up-down">
+                </i>
+                <i id="#section-about" class="fa fa-small about fa-active customScroll">
+                </i>
+                <i id="#section-projects" class="fa fa-small projects customScroll">
+                </i>
+                <i id="#section-social" class="fa fa-small social customScroll">
+                </i>
+                <i id="d" class="fa fa-small-down fa-angle-down customScroll-up-down">
+                </i>
             </div>
-        </div>
-    </header>
 
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Projects</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/cabin.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/cake.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/circus.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/game.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/safe.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About Me</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>Hi there, I am Sanjeev S nair aka ddemented. I am a competitive coder - <a href= "http://www.codechef.com/users/ddemented">Codechef</a><br>
-                    I love to develop websites front end - bootstrap, semantic-ui, html5.
-                    Creating iOS apps - swift and objective c
-                    Currently working on iOS apps</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>I love to game on a competitive level, ranked gold currently in league of legends garena server. SKT all the way</p>
-                </div>
-                <!--<div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Theme
-                    </a>
-                </div>-->
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <!--<section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Contact Me</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">-->
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <!--<form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Name</label>
-                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Email Address</label>
-                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Message</label>
-                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <br>
-                        <div id="success"></div>
+            <!--	Header     -->
+            <div class="intro" id="intro">
+                <div class="intro-body"
+                    data--100-bottom="opacity: 1;"
+                    data-top-center="opacity: 0;">
+                    <div class="container">
                         <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Send</button>
+                          <hr/>
+                            <div class="col-md-8 col-md-offset-2">
+                                <h1 class="brand-heading">Sanjeev S Nair</h1>
+                                <h4 class="brand-heading">aka OldMonk</h1>
+                                <hr/>
+                                <p class="intro-text">Engineer &nbsp&nbsp <blue>|</blue> &nbsp&nbsp Competitive Coder &nbsp&nbsp <blue>|</blue> &nbsp&nbsp Developer &nbsp&nbsp <blue>|</blue> &nbsp&nbsp Gamer</p>
+                                <div class="btn-container">
+                                    <div class="btn-icon" >
+                                        <a id="#section-about" class="customScroll"><i class=" fa fa-medium fa-angle-double-down"></i></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section> -->
 
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-6">
-                        <h3>Location</h3>
-                        <p>IIIT A<br>Allahabad - india<br>8687043759</p>
+            <!--    Main Content     -->
+            <div class="jumbotron" id="section-about">
+                <div class="section"
+                    data-bottom-top="opacity: 0;"
+                    data-center="opacity:1;"
+                    data-anchor-target="#about-header">
+                    <div class="row">
+                        <h1 id="about-header">About Me <i class="fa fa-user"></i></h1>
+                        <div class="hor-rule"
+                            data-bottom="width: 0%; margin-left: 50%;"
+                            data-150-center="width:100%; margin-left: 0%;">
+                            <hr/>
+                        </div>
                     </div>
-                    <div class="footer-col col-md-6">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a><br><br>www.facebook.com/killzinator2
-                            </li>
-                            <!--<li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
-                            </li>-->
-                        </ul>
-                    </div>
-                    <!--<div class="footer-col col-md-4">
-                        <h3>About Freelancer</h3>
-                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
-                    </div>-->
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Sanjeev S
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll visible-xs visible-sm">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <p id="about-text"></p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
+
+
+            <div class="jumbotron-alt" id="section-skills">
+                <div class="section"
+                    data-bottom-top="opacity: 0;"
+                    data-center="opacity:1;"
+                    data-anchor-target="#skills-header">
+                    <div class="row">
+                        <h1 id="skills-header">Skills And Interests <i class="fa fa-wrench"></i></h1>
+                        <div class="hor-rule"
+                            data-bottom="width: 0%; margin-left: 50%;"
+                            data-150-center="width:100%; margin-left: 0%;">
+                            <hr/>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="large-3 columns medium-6">
+                          <div class="btn-container">
+                              <div class="btn-icon">
+                                  <i class="fa fa-large fa-laptop"></i>
+                              </div>
+                              <h3>Web Development</h3>
+                          </div>
+                        </div>
+
+                        <div class="large-3 columns medium-6">
+                            <div class="btn-container">
+                                <div class="btn-icon">
+                                    <i class="fa fa-large fa-apple"></i>
+                                </div>
+                                <h3>iOS App Development(swift)</h3>
+                            </div>
+                        </div>
+
+                        <!--
+                        <div class="large-4 columns medium-6">
+                            <div class="btn-container">
+                                <div class="btn-icon">
+                                    <i class="fa fa-large fa-lightbulb-o"></i>
+                                </div>
+                                <h3>Artificial Intelligence</h3>
+                            </div>
+                        </div>
+
+                        <div class="large-4 columns medium-6">
+                            <div class="btn-container">
+                                <div class="btn-icon">
+                                    <i class="fa fa-large fa-globe"></i>
+                                </div>
+                                <h3>Cyber Security</h3>
+                            </div>
+                        </div>-->
+                        <div class="large-3 columns medium-6">
+                            <div class="btn-container">
+                                <div class="btn-icon">
+                                    <i class="fa fa-large fa-laptop"></i>
+                                </div>
+                                <h3>Competitive Coding</h3>
+                            </div>
+                        </div>
+                    <!-- </div> -->
+
+
+
+                      <div class="large-3 columns small-6">
+                          <div class="btn-container">
+                              <div class="btn-icon">
+                                  <i class="fa fa-large fa-gamepad"></i>
+                                </div>
+                              <h3>Gaming</h3>
+                          </div>
+                      </div>
+
+                      <!-- <div class="large-5 columns medium-6">
+                          <div class="btn-container">
+                              <div class="btn-icon">
+                                  <i class="fa fa-large fa-mortar-board"></i>
+                              </div>
+                              <h3>Entrepreneurship</h3>
+                          </div>
+                      </div> -->
+                   </div>
+
+                   <div class="row">
+
+
+
+                   </div>
+
+                </div>
+            </div>
+
+            <div class="trans-panel">
+            </div>
+
+            <div class="jumbotron" id="section-projects">
+                <div class="section"
+                    data-bottom-top="opacity: 0;"
+                    data-center="opacity:1;"
+                    data-anchor-target="#project-header">
+                    <div class="row">
+                        <h1 id="project-header">Personal Projects <i class="fa fa-file"></i></h1>
+                        <div class="hor-rule"
+                            data-bottom="width: 0%; margin-left: 50%;"
+                            data-150-center="width:100%; margin-left: 0%;">
+                            <hr/>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="large-4 columns medium-6" id="grid1">
+                            <div class="btn-container">
+                                <div class="grid-cell">
+                                    <i class="fa fa-large-icon fa-file-image-o"></i>
+                                </div>
+                                <h3>Steganograhpy</h3>
+                            </div>
+
+                            <div class="overlay-info" id="desc1">
+                                <p>
+                                    <b>Stack : Python, QT GUI</b>
+                                </p>
+                                <p>
+                                    Hiding in plainsight. Used Python's PILLOW library
+                                    to embed image and text messages into another image
+                                    medium without having to significantly modify the
+                                    medium.
+                                </p>
+                                <p style="text-align:   center;">
+                                    <a href="https://github.com/tatparya/Steganography"><i class="fa fa-github"></i> View on Github</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="large-4 columns medium-6" id="grid2">
+                            <div class="btn-container">
+                                <div class="grid-cell">
+                                    <i class="fa fa-large-icon fa-users"></i>
+                                </div>
+                                <h3>Social Media Generation</h3>
+                            </div>
+                            <div class="overlay-info" id="desc2">
+                                <p>
+                                    <b>Stack : C <i class="fa fa-angle-double-right"></i> Graphing, Dijkstra's Algorithm</b>
+                                </p>
+                                <p>
+                                    Created a Social Media Graph using graphing algorithms with given inputs of up to 1000
+                                    data points. Implemented Dijkstra's algorithm to find certain
+                                    threshold parameters.
+                                </p>
+                                <p style="text-align:   center;">
+                                    <a href="https://github.com/tatparya/ECE368P3-Social-Media-Generation"><i class="fa fa-github"></i> View on Github</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="large-4 columns medium-6" id="grid3">
+                            <div class="btn-container">
+                                <div class="grid-cell">
+                                    <i class="fa fa-large-icon fa-twitter-square"></i>
+                                </div>
+                                <h3>Twitter Connections</h3>
+                            </div>
+                            <div class="overlay-info" id="desc3">
+                                <p>
+                                    <b>Stack : Java, Android, Twitter API</b>
+                                </p>
+                                <p>
+                                    Designed an android application using the Twitter API.
+                                    Much like UBER, an application to post service requests
+                                    to Twitter and filter out tweets for another end user willing
+                                    to provide those services.
+                                </p>
+                                <p style="text-align:   center;">
+                                    <a href="https://github.com/apoorvvw/Android_Projects/tree/master/Connections"><i class="fa fa-github"></i> View on Github</a>
+                                </p>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="large-4 columns medium-6" id="grid4">
+                            <div class="btn-container">
+                                <div class="grid-cell">
+                                    <i class="fa fa-large-icon fa-yelp  "></i>
+                                </div>
+                                <h3>Yelp Ratings</h3>
+                            </div>
+                            <div class="overlay-info" id="desc4">
+                                <p>
+                                    <b>Stack : C <i class="fa fa-angle-double-right"></i> Binary Search Tree</b>
+                                </p>
+                                <p>
+                                    Implemented a Binary Search Tree Algorithm and complex data
+                                    structures to search restaurant ratings and reviews in over
+                                    10,000 data points.
+                                </p>
+                                <p style="text-align:   center;">
+                                    <a href="https://github.com/tatparya/ECE264/tree/master/PA09"><i class="fa fa-github"></i> View on Github</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="large-4 columns medium-6" id="grid5">
+                            <div class="btn-container">
+                                <div class="grid-cell">
+                                    <i class="fa fa-large-icon fa-gamepad"></i>
+                                </div>
+                                <h3>Interactive Arduino Game</h3>
+                            </div>
+                            <div class="overlay-info" id="desc5">
+                                <p>
+                                    <b>Stack : C++ <i class="fa fa-angle-double-right"></i> Multi-threading, Arduino API, </b>
+                                </p>
+                                <p>
+                                    Developed an interactive game in C++ using an
+                                    Arduino Microprocessor. Integrated ping sensors
+                                    with palm movements to control the gameplay, making
+                                    the game much more fun!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="large-4 columns medium-6" id="grid6">
+                            <div class="btn-container">
+                                <div class="grid-cell">
+                                    <i class="fa fa-large-icon fa-html5"></i>
+                                </div>
+                                <h3>Personal Website</h3>
+                            </div>
+                            <div class="overlay-info" id="desc6">
+                                <p>
+                                    <b>Stack : HTML, CSS, JavaScript</b>
+                                </p>
+                                <p>
+                                    Implemented Foundation, custom Javascript and HTML
+                                    to create this highly interavtive web page. Please
+                                    follow the Github link for further documentation.
+                                </p>
+                                <p style="text-align:   center;">
+                                    <a href="https://github.com/tatparya/tatparya.github.io"><i class="fa fa-github"></i> View on Github</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="row">
+                        <p style="text-align: center;">
+                            <i>Hover over sections for more information</i>
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+            <div class="jumbotron-alt" id="section-resume">
+                <div class="section"
+                    data-bottom-top="opacity: 0;"
+                    data-center="opacity:1;"
+                    data-anchor-target="#resume-header">
+                    <div class="row">
+                        <h1 id="resume-header">View My Resume <i class="fa fa-list"></i></h1>
+                        <div class="hor-rule"
+                            data-bottom="width: 0%; margin-left: 50%;"
+                            data-150-center="width:100%; margin-left: 0%;">
+                            <hr/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <form method="get" action="Tatparya_Shankar_Resume_Spring2015.pdf">
+                                <button class="btn-large" type="submit"><p>View Resume</p></button>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
+
+            <div class="trans-panel">
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+            <div class="jumbotron" id="section-social">
+                <div class="section"
+                    data-bottom-top="opacity: 0;"
+                    data--50-bottom="opacity:1;">
+                    <div class="row">
+                        <h1>Follow Me On Social Media <i class="fa fa-comments-o"></i></h1>
+                        <div class="hor-rule"
+                            data-bottom="width: 0%; margin-left: 50%;"
+                            data--50-bottom="width:100%; margin-left: 0%;">
+                            <hr/>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="row">
+                        <div class="large-3 columns medium-6">
+                            <div class="social-icon">
+                                <a href="https://www.facebook.com/killzinator2"><i class="fa fa-large-icon fa-social fa-facebook"></i></a>
+                            </div>
+                            <h3>Facebook</h3>
+                        </div>
+                        <div class="large-3 columns medium-6">
+                            <div class="social-icon">
+                                <a href="https://twitter.com/ddementedsn"><i class="fa fa-large-icon fa-social fa-twitter"></i></a>
+                            </div>
+                            <h3>Twitter</h3>
+                        </div>
+                        <div class="large-3 columns medium-6">
+                            <div class="social-icon">
+                                <a href=""><i class="fa fa-large-icon fa-social fa-linkedin"></i></a>
+                            </div>
+                            <h3>LinkedIn</h3>
+                        </div>
+                        <div class="large-3 columns medium-6">
+                            <div class="social-icon">
+                                <a href="https://github.com/ddemented"><i class="fa fa-large-icon fa-social fa-github-alt"></i></a>
+                            </div>
+                            <h3>Github</h3>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+            <div class="jumbotron-alt" id="section-contact">
+                <div class="section"
+                    data-bottom-top="opacity: 0;"
+                    data-center-top="opacity:1;">
+                    <div class="row">
+                        <h1>Contact Me <i class="fa fa-mobile-phone"></i></h1>
+                        <div class="hor-rule"
+                            data-bottom="width: 0%; margin-left: 50%;"
+                            data-150-center="width:100%; margin-left: 0%;">
+                            <hr/>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                    <br>
+                    <div class="row">
+                        <div class="large-6 columns">
+                            <h2>Email <i class="fa fa-inbox"></i></h2>
+                            <p style="text-align:center;">
+                                iec2013089@iiita.ac.in<br>
+                                sanjeevsureshn@gmail.com
+                            </p>
+                        </div>
+                        <div class="large-6 columns">
+                            <h2>Phone <i class="fa fa-phone"></i></h2>
+                            <p style="text-align:center;">
+                                +91-8687043759 ( India )
+                            </p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                    <div class="row">
+                        <div class="row">
+                            <div class="large-12 columns">
+                                <a href="#" data-reveal-id="myModal">
+                                    <button id="#section-form" class="btn-large form-reveal customScroll" onclick="return false;"><p>Get in touch with me</p></button>
+                                </a>
+                            </div>
+                        </div>
+                        <br id="section-form">
+                        <div id="email-form" class="row form-div" style="display:none;">
+                            <div style="text-align: center ">
+                                <h2>Almost There!</h2>
+                                <p>Please fill in the form below to get in touch!</p>
+
+                                <!--    Contact Form    -->
+                                <form>
+                                    <div class="row">
+                                        <div class="large-2 columns medium-4">
+                                            <p>
+                                                Name
+                                            </p>
+                                        </div>
+                                        <div class="large-10 columns medium-6">
+                                            <label>
+                                                <input class="field" type="text" name="name">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="large-2 columns medium-4">
+                                            <p>
+                                                Email
+                                            </p>
+                                        </div>
+                                        <div class="large-10 columns medium-6">
+                                            <label>
+                                                <input class="field" type="email" name="email">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="large-2 columns medium-4">
+                                            <p>
+                                                Subject
+                                            </p>
+                                        </div>
+                                        <div class="large-10 columns medium-6">
+                                            <label>
+                                                <input class="field" type="text" name="subject">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="large-2 columns medium-4">
+                                            <p>
+                                                Body
+                                            </p>
+                                        </div>
+                                        <div class="large-10 columns medium-6">
+                                            <label>
+                                                <textarea class="field" name="body"></textarea>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="large-12 columns">
+                                            <button id="#section-contact" class="btn-large btn-send" ><p>Send <i class="fa fa-send"></i></p></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="large-12 columns thanks" style="display:none;">
+                                <p style="text-align: center; position: relative; ">
+                                    <b><i class="fa fa-quote-left"></i> Thank You! Your email was successfully sent.</b>
+                                </p>
+                            </div>
                         </div>
                     </div>
+
+                    <!--  Back to top button    -->
+                    <div class="row">
+                        <div class="btn-icon-up" >
+                            <a id="#intro" class="customScroll"><i class="fa fa-medium fa-angle-double-up"></i></a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+
+            <div class="trans-panel" style="text-align:center">
+
+            </div>
+
+            <!--    Footer     -->
+            <div class="footer">
+                <p>
+                  <i class="fa fa-copyright">Sanjeev S Nair 2015</i>
+
+                </p>
+            </div>
+
         </div>
-    </div>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/freelancer.js"></script>
-
-</body>
-
+        <!--    Scripts     -->
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/customScroll.js"></script>
+        <script src="js/customNav.js"></script>
+        <script src="js/infoBox.js"></script>
+        <script src="js/skrollr.js"></script>
+        <script src="js/foundation.min.js"></script>
+        <script src="js/form.js"></script>
+        <script>
+          $(document).foundation();
+          var s = skrollr.init();
+          initInfo();
+        </script>
+    </body>
 </html>
