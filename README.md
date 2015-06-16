@@ -1,3 +1,3 @@
-# Tatparya Shankar
+# Sanjeev S Nair
 
 Personal Website Documentation
