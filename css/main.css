@@ -248,6 +248,18 @@ hr  {
     z-index:    100px;
 }
 
+.overlay-info2 {
+    display:    none;
+    position:   absolute;
+    bottom:        0px;
+    overflow:   visible;
+    width:      100%;
+    border:     2px solid #111111;
+    background-color:   #0071C0;
+    padding:    15px;
+    z-index:    100px;
+}
+
 .overlay-info p {
     font-size:  20px;
 }
@@ -387,6 +399,30 @@ i.fa-twitter:hover{
     background-color: #00aced;
     border: 2px solid #00aced;
     color:  #FFF;
+}
+
+i.fa-reddit:hover{
+    background-color: #8E674A;
+    border: 2px solid grey;
+    color:  #FFF;
+}
+
+i.fa-header:hover{
+    background-color: #00CF64;
+    border: 2px solid grey;
+    color:  #FFF;
+}
+
+i.fa-globe:hover{
+    background-color: #2378BA;
+    border: 2px solid grey;
+    color:  #FFF;
+}
+
+i.fa-bar-chart:hover{
+    background-color: #008FD3;
+    border: 2px solid #FDD44D;
+    color:  #C70007;
 }
 
 i.fa-github-alt:hover{

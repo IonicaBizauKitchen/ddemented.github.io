@@ -101,4 +101,74 @@ $(function() {
             $("#desc6").stop().slideUp(750, "easeInOutExpo");
         }
     );
+
+    //hover for skills
+
+    $("#circle1").hover(
+    function(){
+        $("#exp1").stop().slideDown(750, "easeInOutExpo");
+        },
+    function(){
+        $("#exp1").stop().slideUp(750, "easeInOutExpo");
+    });
+
+    $("#circle1").hover(
+        function(){
+        },
+        function(){
+
+            $("#exp1").stop().slideUp(750, "easeInOutExpo");
+        }
+    );
+
+    $("#circle2").hover(
+    function(){
+        $("#exp2").stop().slideDown(750, "easeInOutExpo");
+        },
+    function(){
+        $("#exp2").stop().slideUp(750, "easeInOutExpo");
+    });
+
+    $("#circle2").hover(
+        function(){
+        },
+        function(){
+
+            $("#exp2").stop().slideUp(750, "easeInOutExpo");
+        }
+    );
+
+    $("#circle3").hover(
+    function(){
+        $("#exp3").stop().slideDown(750, "easeInOutExpo");
+        },
+    function(){
+        $("#exp3").stop().slideUp(750, "easeInOutExpo");
+    });
+
+    $("#circle3").hover(
+        function(){
+        },
+        function(){
+
+            $("#exp3").stop().slideUp(750, "easeInOutExpo");
+        }
+    );
+
+    $("#circle4").hover(
+    function(){
+        $("#exp4").stop().slideDown(750, "easeInOutExpo");
+        },
+    function(){
+        $("#exp4").stop().slideUp(750, "easeInOutExpo");
+    });
+
+    $("#circle4").hover(
+        function(){
+        },
+        function(){
+
+            $("#exp4").stop().slideUp(750, "easeInOutExpo");
+        }
+    );
 });
